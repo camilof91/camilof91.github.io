@@ -282,6 +282,11 @@
     .interes i {
         margin-right: 10px;
         font-size: 30px;
+        display: flex;
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Muestra los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
 
     .interes span {
@@ -460,7 +465,7 @@
                     </button>
                 </div>
                 <!-- Mapa -->
-                <div class="col">
+                <!-- <div class="col">
                     <img src="img/ubicacion.png" alt="">
                     <div class="info">
                         <ul>
@@ -478,10 +483,28 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
+
+    <style>
+        .col input, textarea {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px; /* Ajusta el ancho máximo según tu diseño */
+            margin: auto; /* Centra el contenedor */
+            width: 100%; /* Asegura que los campos llenen el contenedor */
+            padding: 10px;
+            margin-bottom: 10px; /* Espaciado entre campos */
+            border-radius: 5px; /* Bordes redondeados */
+            border: 1px solid #ccc; /* Borde gris claro */
+            box-sizing: border-box; /*Incluye el padding y el borde en el ancho total */
+            resize: vertical;
+        }
+     
+         </style>
+   
 
     <!-- footer -->
     <footer>
@@ -496,7 +519,7 @@
             <a href="#"><i class="fa-solid fa-rss"></i></a>
         </div>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
