@@ -546,7 +546,7 @@ html {
 
 /* SECCION CONTACTO */
 .contacto {
-    background-image: url(/home/camilof/Documents/Repos/camilofetecua/public/assets/img/contact_bg.png);
+    background-image: url(../../public/assets/img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
