@@ -254,6 +254,11 @@ html {
     width: 100%;
 }
 
+.sobremi a{
+    text-decoration: none;
+}
+
+
 /* SECCION SKILLS */
 .skills {
     background-color: #252A2E;
