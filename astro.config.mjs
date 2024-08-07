@@ -1,5 +1,6 @@
 /* eslint-disable turbo/no-undeclared-env-vars */
 import { defineConfig } from "astro/config";
+import vercel from '@astrojs/vercel/serverless';
 
 
 /* 
@@ -25,3 +26,10 @@ let BASE_URL = LOCALHOST_URL;
 if (isBuild) {
   BASE_URL = LIVE_URL;
 }
+
+
+export default defineConfig({
+  // ...
+  output: 'server',
+  adapter: vercel(),
+});
